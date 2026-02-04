@@ -1,0 +1,169 @@
+{
+    "nav": {
+        "home": "Home",
+        "selfIntroduction": "Self-Introduction",
+        "homestayAndCultural": "Homestay and Cultural Experiences",
+        "optionalTours": "Optional Tours",
+        "customerTestimonials": "Customer Testimonials",
+        "inquiry": "Inquiry",
+        "homestay": "Homestay",
+        "culturalExperiences": "Cultural Experiences"
+    },
+    "hero": {
+        "ctaTitle": "India Tour HomeStay",
+        "title": "Japanese Interpreter & Guide Service",
+        "subtitle": "Japanese language support for travel, cultural experiences, and homestay in India."
+    },
+    "selfIntro": {
+        "badge": "Self-Introduction",
+        "title": "Balma BK",
+        "item1": "Certified tour guide by the Ministry of Tourism, Government of India",
+        "item2": "PAN India Tourist Guide Qualification",
+        "item3": "Private and group tours for over 3,500 people across India",
+        "item4": "For over 35 years, we have welcomed over 2,500 Japanese guests into our homestay program.",
+        "item5": "24 years of experience in import/export business between Japan and India"
+    },
+    "stay": {
+        "ctaTitle": "A tour of India's World Heritage sites",
+        "ctaButton": "Learn more",
+        "badge": "Welcome to our home in India!",
+        "title": "A special trip for you to get a deeper understanding of local life",
+        "deluxeRoom": "DELUXE ROOM",
+        "deluxeRoomDesc": "Homestay with breakfast",
+        "standardRoom": "STANDARD ROOM",
+        "standardRoomDesc": "Homestay with breakfast",
+        "standardRoomInfo": "1 person: 13,700 yen | 2 people: 16,300 yen (incl. breakfast)",
+        "deluxeRoomInfo": "1 person: 13,700 yen | 2 people: 16,300 yen (incl. breakfast)"
+    },
+    "experiences": {
+        "badge": "Deeply experience Indian culture! A special trip with a homestay",
+        "title": "This is your chance to experience authentic Indian culture, learn, and connect with the local community!",
+        "description": "Don't miss this wonderful opportunity to fully experience the magic of India and learn new skills through authentic traditional classes and experiences. We are offering the following special traditional classes to Japanese tourists. Why not join us and experience Indian culture firsthand?",
+        "card1": {
+            "title": "Ayurvedic Massage (Shirodhara)",
+            "desc": "Traditional healing therapy for complete relaxation and rejuvenation."
+        },
+        "card2": {
+            "title": "Indian Home Cooking Experience",
+            "desc": "Learn the secrets of authentic Indian spices and home-style recipes.",
+            "rank": "Ranked 1st"
+        },
+        "card3": {
+            "title": "Henna Art Experience (Henna Tattoo)",
+            "desc": "It's gentle on the skin and gives a beautiful, natural finish."
+        },
+        "card4": {
+            "title": "Yoga Experience",
+            "desc": "Experience a truly personalized yoga session that brings your body and mind into harmony."
+        },
+        "card5": {
+            "title": "Experience How To Wrap A Sari (Dressing)",
+            "desc": "Learn how to wrap a sari elegantly through hands-on experience."
+        }
+    },
+    "tourism": {
+        "badge": "Safe and secure journey (accompanied by a government-certified tour guide)",
+        "title": "For Those Who Just Can't Get Enough Of The Classics, Customize Your Own Indian Adventure With A Tour!",
+        "north": "North India tourism here!",
+        "south": "South India tourism here!",
+        "east": "East India Tourism here!",
+        "west": "Western India tourism here!"
+    },
+    "testimonials": {
+        "badge": "Customer Testimonials",
+        "title": "Customer Testimonials",
+        "button": "Click to see!",
+        "items": [
+            {
+                "name": "Reiko",
+                "text": "I met Verma 20 years ago and fell in love with India I would recommend a homestay with Verma's family to any beginner in India. Verma is one of the few governments certified guides who can guide you throughout India. Please feel free to contact Mr. Verma for any consultation regarding India, including Japanese, English, French, Indian, etc. interpretation and business coordination consultation."
+            },
+            {
+                "name": "Kazuyo Konaka",
+                "text": "I have been staying with Verma's family for more than 10 years now. My job is to translate silk thread cloth and other fabrics to be made in India. He is very helpful when I ask him to do a lot of things, and they are always willing to help me find them. He understands the hearts of Japanese people very well. He is a grateful person."
+            },
+            {
+                "name": "Ms. Noriko Shinna",
+                "text": "I was very anxious about my first trip to India alone, but I was able to enjoy sightseeing in India while staying at Verma's house with a homestay in a safe and comfortable environment."
+            }
+        ]
+    },
+    "footer": {
+        "selfIntro": {
+            "title": "Self-Introduction",
+            "desc": "Traditional healing therapy for complete relaxation and rejuvenation. Learn the secrets of authentic Indian spices and home-style recipes."
+        },
+        "page": {
+            "title": "Page",
+            "links": {
+                "website": "Website",
+                "profile": "Company Profile",
+                "homestay": "Homestay and Cultural Experiences",
+                "tours": "Tours and Travel",
+                "testimonials": "Customer Testimonials"
+            }
+        },
+        "newsletter": {
+            "title": "Newsletter",
+            "desc": "Stay up to date with our latest news with our newsletter.",
+            "agree": "I agree to all terms and policies."
+        },
+        "contact": {
+            "title": "Contact Address",
+            "phoneLabel": "Inquiry",
+            "emailLabel": "Email Address",
+            "officeLabel": "Office Visit",
+            "officeValue": "India"
+        },
+        "copyright": "© 2024 Copyright belongs to Japanese Interpreter. Unauthorized reproduction prohibited."
+    },
+    "contactForm": {
+        "badge": "Inquiry",
+        "title": "Are you ready to get our best service? Feel free to contact us.",
+        "office": {
+            "label": "Locations",
+            "value": "New Delhi"
+        },
+        "email": {
+            "label": "Email Address",
+            "value": "info@japanese-interpreter.com"
+        },
+        "hotline": {
+            "label": "Inquiry",
+            "value1": "+81(0) 90-1917-5629 Reiko (Japan)",
+            "value2": "+81(0) 80-5786-9994 Ayushi (Japan)",
+            "value3": "+91(0) 98100-79222 Verma (India)"
+        },
+        "fields": {
+            "name": "Name",
+            "namePlaceholder": "Your Name",
+            "email": "Email",
+            "emailPlaceholder": "XXXX@example.com",
+            "phone": "Telephone Number",
+            "phonePlaceholder": "080-XXXX-XXX",
+            "message": "Inquiry details",
+            "messagePlaceholder": "Please enter your inquiry details here.",
+            "send": "Send",
+            "loading": "Sending...",
+            "qr": "Please feel free to contact us.",
+            "instagram": "Follow on Instagram",
+            "line": "Follow on Line"
+        },
+        "errors": {
+            "name": "Name is required",
+            "email": "Invalid email address",
+            "emailRequired": "Email is required",
+            "phone": "Telephone number is required",
+            "message": "Inquiry details are required"
+        }
+    },
+    "thankyou": {
+        "title": "Thank you for your inquiry",
+        "description": "The information you entered has been sent successfully. A representative will contact you shortly. Please wait a moment.",
+        "line": "Talk to us",
+        "backHome": "Back to Home"
+    },
+    "cta": {
+        "inquireNow": "Inquire now"
+    }
+}
