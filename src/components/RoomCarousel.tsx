@@ -10,6 +10,7 @@ interface RoomItem {
     title: string;
     description: string;
     price: string;
+    meal: string;
     alt: string;
 }
 
@@ -121,7 +122,10 @@ const RoomCarousel = ({ rooms, autoplayInterval = 5000 }: RoomCarouselProps) => 
                                                 {room.description}
                                             </p>
                                             <p className="text-sm text-gray-500 leading-relaxed font-sans italic">
-                                                {room.price}
+                                                - {room.price}
+                                            </p>
+                                            <p className="text-sm text-gray-500 leading-relaxed font-sans italic">
+                                                - {room.meal}
                                             </p>
                                         </div>
                                     </div>

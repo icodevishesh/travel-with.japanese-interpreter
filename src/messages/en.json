@@ -14,31 +14,43 @@
         "title": "Japanese Interpreter & Guide Service",
         "subtitle": "Japanese language support for travel, cultural experiences, and homestay in India."
     },
+    "ytVideo": {
+        "title": "Japanese interpreter included | India travel support",
+        "subtitle": "This is an introductory video about our India travel support service with Japanese interpretation. If this is your first time using our service, please watch this video first."
+    },
     "selfIntro": {
         "badge": "Self-Introduction",
         "title": "Balma BK",
+        "subtitle": "We provide travel and accommodation support in India for Japanese travelers, with services available in Japanese. I will be responsible for itinerary planning, local transportation, and communication during cultural experiences.",
+        "experience": "Experience and qualifications",
         "item1": "Certified tour guide by the Ministry of Tourism, Government of India",
-        "item2": "PAN India Tourist Guide Qualification",
-        "item3": "Private and group tours for over 3,500 people across India",
-        "item4": "For over 35 years, we have welcomed over 2,500 Japanese guests into our homestay program.",
-        "item5": "24 years of experience in import/export business between Japan and India"
+        "item2": "Holds a PAN India (all-India) tourism guide certification.",
+        "item3": "Experience in handling tours throughout India: Approximately 3,500 participants in total.",
+        "item4": "Hosting Japanese guests for homestays: Over 35 years (approximately 2,500 guests in total)",
+        "item5": "24 years of experience in import and export business between Japan and India"
     },
     "stay": {
         "ctaTitle": "A tour of India's World Heritage sites",
         "ctaButton": "Learn more",
         "badge": "Welcome to our home in India!",
-        "title": "A special trip for you to get a deeper understanding of local life",
+        "title": "About homestay",
+        "description": {
+            "1": "Accommodation details will be provided in advance",
+            "2": "Privacy is respected during your stay",
+            "3": "Meal details can be confirmed in advance"
+        },
         "deluxeRoom": "DELUXE ROOM",
         "deluxeRoomDesc": "Homestay with breakfast",
         "standardRoom": "STANDARD ROOM",
         "standardRoomDesc": "Homestay with breakfast",
         "standardRoomInfo": "1 person: 13,700 yen | 2 people: 16,300 yen (incl. breakfast)",
-        "deluxeRoomInfo": "1 person: 13,700 yen | 2 people: 16,300 yen (incl. breakfast)"
+        "deluxeRoomInfo": "1 person: 13,700 yen | 2 people: 16,300 yen (incl. breakfast)",
+        "meals": "Accommodation conditions and meal details will be explained in advance."
     },
     "experiences": {
         "badge": "Deeply experience Indian culture! A special trip with a homestay",
-        "title": "This is your chance to experience authentic Indian culture, learn, and connect with the local community!",
-        "description": "Don't miss this wonderful opportunity to fully experience the magic of India and learn new skills through authentic traditional classes and experiences. We are offering the following special traditional classes to Japanese tourists. Why not join us and experience Indian culture firsthand?",
+        "title": "Cultural Experience Information",
+        "description": "Participation is not required. The program can be adjusted according to your preferences, health condition, and schedule. You will have the opportunity to directly experience India’s traditional culture and way of life, deepening your understanding of the journey.",
         "card1": {
             "title": "Ayurvedic Massage (Shirodhara)",
             "desc": "Traditional healing therapy for complete relaxation and rejuvenation."
