@@ -84,7 +84,11 @@ export default async function Home({
                         title="Indian Tour HomeStay"
                         className="rounded-xl ring-2 ring-gray-300 shadow-2xl"
                     />
+                    <p className="text-gray-500 text-sm md:text-md leading-relaxed text-center mt-6">
+                        {t("ytVideo.description")}
+                    </p>
                 </div>
+
             </section>
 
             {/* Self Introduction section */}
