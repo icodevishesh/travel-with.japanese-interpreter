@@ -156,20 +156,6 @@ export default async function Home({
             {/* Stay section */}
             <section id="homestay" className="w-full bg-[#f9fafb] py-12 md:py-24 px-4 md:px-12 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto relative z-10">
-                    {/* CTA Banner */}
-                    {/* <div className="max-w-6xl mx-auto mb-18 bg-[#12aa91] rounded-xl p-6 md:p-12 relative overflow-hidden group">
-                        <div className="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
-                            <h3 className="text-2xl md:text-4xl text-center md:text-left font-extrabold text-white leading-tight">
-                                {t("stay.ctaTitle")}
-                            </h3>
-
-                            <Link
-                                href="#contact-form"
-                                className="bg-white text-black px-6 py-2 md:px-12 md:py-4 rounded-xl font-bold hover:bg-gray-50 transition-all transform hover:scale-105 shadow-lg whitespace-nowrap">
-                                {t("stay.ctaButton")}
-                            </Link>
-                        </div>
-                    </div> */}
 
                     {/* Section Header */}
                     <div className="flex flex-col items-center text-center mb-16">
