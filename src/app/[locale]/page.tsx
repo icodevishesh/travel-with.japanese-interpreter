@@ -109,6 +109,8 @@ export default async function Home({
                                 width={800}
                                 height={600}
                                 className="w-full h-auto object-cover"
+                                priority
+                                sizes="(max-width: 1024px) 100vw, 50vw"
                             />
                         </div>
 
@@ -120,6 +122,7 @@ export default async function Home({
                                 width={400}
                                 height={300}
                                 className="w-full h-auto object-cover"
+                                sizes="(max-width: 1024px) 50vw, 25vw"
                             />
                         </div>
                     </div>
@@ -254,6 +257,7 @@ export default async function Home({
                                 alt={region.title}
                                 fill
                                 className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                             {/* Overlay with title matching design */}
                             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex items-end justify-start p-6">

@@ -1,8 +1,8 @@
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import { getMessages, setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
-import { Inter, Geist, Geist_Mono, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "../../app/globals.css";
 
 import { Footer } from "../../components/Footer";
@@ -17,20 +17,42 @@ const playfair = Playfair_Display({
     subsets: ["latin"],
 });
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
+export async function generateMetadata({
+    params
+}: {
+    params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "meta" });
 
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.india-tour-homestay.com";
+    const canonical = `${baseUrl}/${locale}`;
 
-export const metadata: Metadata = {
-    title: "Japanese Interpreter",
-    description: "Japanese language support for travel, cultural experiences, and homestay in India.",
-};
+    return {
+        title: t("title"),
+        description: t("description"),
+        alternates: {
+            canonical: canonical,
+            languages: {
+                en: `${baseUrl}/en`,
+                ja: `${baseUrl}/ja`,
+            },
+        },
+        openGraph: {
+            title: t("title"),
+            description: t("description"),
+            url: canonical,
+            siteName: "Japanese Interpreter & Guide Service",
+            locale: locale === "ja" ? "ja_JP" : "en_US",
+            type: "website",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: t("title"),
+            description: t("description"),
+        },
+    };
+}
 
 export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
@@ -54,13 +76,12 @@ export default async function LocaleLayout({
 
     return (
         <html lang={locale}>
-            <body className={`${inter.className} ${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased`}>
+            <body className={`${inter.className} ${playfair.variable} antialiased`}>
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     {children}
                     <Footer />
                     <FloatingSocials locale={locale} />
                 </NextIntlClientProvider>
-
             </body>
         </html>
     );
