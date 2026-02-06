@@ -116,11 +116,6 @@
                 "testimonials": "お客様の声"
             }
         },
-        "newsletter": {
-            "title": "ニュースレター",
-            "desc": "ニュースレターで最新ニュースをチェックしてください。",
-            "agree": "すべての利用規約とポリシーに同意します。"
-        },
         "contact": {
             "title": "連絡先住所",
             "phoneLabel": "お問い合わせ",
@@ -128,7 +123,12 @@
             "officeLabel": "オフィス訪問",
             "officeValue": "インド"
         },
-        "copyright": "© 2024 Copyright belongs to Japanese Interpreter. 無断転載を禁じます。"
+        "address": {
+            "value": "住所",
+            "title": "メインオフィス - TARUNA IMPEX",
+            "address": "8th Floor, C-802, K M Apartment, Plot No. 12, Sector 12 Dwarka, New Delhi, South West Delhi, Delhi, 110078"
+        },
+        "copyright": "© 2026 Copyright belongs to Japanese Interpreter. 無断転載を禁じます。"
     },
     "contactForm": {
         "badge": "お問い合わせ",

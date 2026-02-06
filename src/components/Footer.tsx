@@ -1,15 +1,9 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import {
-    Twitter,
-    Facebook,
-    Instagram,
-    Linkedin,
     Phone,
     Mail,
     MapPin,
-    CheckCircle2,
-    ArrowUpRight
 } from "lucide-react";
 
 export function Footer() {
@@ -18,7 +12,7 @@ export function Footer() {
     return (
         <footer className="text-white">
 
-            <div className="bg-[#1d231f] max-w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 py-12 px-6 md:px-12 lg:px-24">
+            <div className="bg-[#1d231f] max-w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 py-12 px-6 md:px-12 lg:px-24">
                 {/* Self Introduction section */}
                 <div className="flex flex-col gap-6">
                     <h4 className="text-lg font-bold tracking-tight text-white">{t("selfIntro.title")}</h4>
@@ -40,7 +34,7 @@ export function Footer() {
                 </div>
 
                 {/* Contact section */}
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-6">
                     <h4 className="text-lg font-bold tracking-tight text-white">{t("contact.title")}</h4>
                     <div className="flex flex-col gap-6">
                         <a href="tel:+919810079222" className="flex items-center gap-4 group">
@@ -74,6 +68,22 @@ export function Footer() {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                {/* Address */}
+                <div className="flex flex-col gap-6">
+                    <h4 className="text-lg font-bold tracking-tight text-white">
+                        {t("address.value")}</h4>
+                    <a
+                        href="https://maps.app.goo.gl/iFwMNLJQJaWp6xXF7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 text-sm leading-relaxed max-w-xs hover:underline transition-colors cursor-pointer"
+                    >
+                        {t("address.title")}
+                        <br />
+                        {t("address.address")}
+                    </a>
                 </div>
             </div>
 
