@@ -21,7 +21,8 @@
     },
     "selfIntro": {
         "badge": "Self-Introduction",
-        "title": "Balma BK",
+        "title": "Local supporter for Japanese travelers in India",
+        "name": "Varma BK",
         "subtitle": "We provide travel and accommodation support in India for Japanese travelers, with services available in Japanese. I will be responsible for itinerary planning, local transportation, and communication during cultural experiences.",
         "experience": "Experience and qualifications",
         "item1": "Certified tour guide by the Ministry of Tourism, Government of India",
@@ -44,8 +45,13 @@
         "deluxeRoomDesc": "Homestay with breakfast",
         "standardRoom": "STANDARD ROOM",
         "standardRoomDesc": "Homestay with breakfast",
-        "standardRoomInfo": "1 person: 13,700 yen | 2 people: 16,300 yen (incl. breakfast)",
-        "deluxeRoomInfo": "1 person: 13,700 yen | 2 people: 16,300 yen (incl. breakfast)",
+        "standardRoomInfo": "1 person: 13,800 yen / 2 people: 16,800 yen (Breakfast included, per night)",
+        "standardRoomInfo2": "We will provide you with detailed information about accommodation and meal plans in advance.",
+        "standardRoomInfo3": "Even if it is your first time in India, you can use it with peace of mind.",
+        "deluxeRoomInfo": "1 person: 16,800 yen / 2 people: 18,900 yen (Breakfast included, per night)",
+        "deluxeRoomInfo2": "This room is larger and more comfortable than the standard room.",
+        "deluxeRoomInfo3": "Large enough to easily open your suitcase",
+        "deluxeRoomInfo4": "Recommended for stays with family and friends",
         "meals": "Accommodation conditions and meal details will be explained in advance."
     },
     "experiences": {
@@ -54,29 +60,31 @@
         "description": "Participation is not required. The program can be adjusted according to your preferences, health condition, and schedule. You will have the opportunity to directly experience India’s traditional culture and way of life, deepening your understanding of the journey.",
         "card1": {
             "title": "Ayurvedic Massage (Shirodhara)",
-            "desc": "Traditional healing therapy for complete relaxation and rejuvenation."
+            "desc": "This is an Ayurvedic treatment experience based on traditional Indian medicine. The details will be explained in advance."
         },
         "card2": {
-            "title": "Indian Home Cooking Experience",
-            "desc": "Learn the secrets of authentic Indian spices and home-style recipes.",
-            "rank": "Ranked 1st"
+            "title": "Indian home cooking experience (recommended for first-timers)",
+            "desc": "Experience Indian home cooking, a favorite in local homes. We'll also explain how to use spices and cooking techniques.",
+            "rank": "Recommended for first-time visitors"
         },
         "card3": {
             "title": "Henna Art Experience (Henna Tattoo)",
-            "desc": "It's gentle on the skin and gives a beautiful, natural finish."
+            "desc": "This is a henna art experience using plant-derived henna."
         },
         "card4": {
             "title": "Yoga Experience",
-            "desc": "Experience a truly personalized yoga session that brings your body and mind into harmony."
+            "desc": "This yoga experience will be tailored to suit your experience and physical condition. Even first-timers are welcome to participate."
         },
         "card5": {
-            "title": "Experience How To Wrap A Sari (Dressing)",
-            "desc": "Learn how to wrap a sari elegantly through hands-on experience."
+            "title": "Experience how to wrap a sari (popular with women)",
+            "desc": "You can experience the basics of how to wrap (put on) a sari, a traditional Indian garment. This is a popular experience for those who want to commemorate their trip and enjoy taking photos.",
+            "rank": "Popular among women"
         }
     },
     "tourism": {
-        "badge": "Safe and secure journey (accompanied by a government-certified tour guide)",
-        "title": "For Those Who Just Can't Get Enough Of The Classics, Customize Your Own Indian Adventure With A Tour!",
+        "badge": "About the tour",
+        "title": "If the standard tours aren't enough for you, customize your own Indian adventure with a tour!",
+        "description": "If this is your first trip to India and you haven't decided on your destination or itinerary, we can help you. Based on your consultation, we will provide you with itinerary suggestions and guidance in Japanese, generally within 24 hours.",
         "north": "North India tourism here!",
         "south": "South India tourism here!",
         "east": "East India Tourism here!",
@@ -85,6 +93,7 @@
     "testimonials": {
         "badge": "Customer Testimonials",
         "title": "Customer Testimonials",
+        "description": "These are comments from Japanese customers who have used our service. Many of these comments are from people visiting India for the first time.",
         "button": "Click to see!",
         "items": [
             {
@@ -104,7 +113,7 @@
     "footer": {
         "selfIntro": {
             "title": "Self-Introduction",
-            "desc": "Traditional healing therapy for complete relaxation and rejuvenation. Learn the secrets of authentic Indian spices and home-style recipes."
+            "desc": "We provide travel support and interpretation services in Japanese for Japanese travelers in India. We are available to answer any questions you may have about sightseeing, accommodation, and cultural experiences."
         },
         "page": {
             "title": "Page",
@@ -123,41 +132,40 @@
         },
         "contact": {
             "title": "Contact Address",
-            "phoneLabel": "Inquiry",
+            "phoneLabel": "telephone number",
             "emailLabel": "Email Address",
-            "officeLabel": "Office Visit",
-            "officeValue": "India"
+            "officeLabel": "Location",
+            "officeValue": "India (Delhi)"
         },
         "address": {
-            "value": "Address",
-            "title": "Main Office - TARUNA IMPEX",
-            "address": "8th Floor, C-802, K M Apartment, Plot No. 12, Sector 12 Dwarka, New Delhi, South West Delhi, Delhi, 110078"
+            "value": "Head office location",
+            "title": "India (details will be provided after enquiry)"
         },
         "copyright": "© 2026 Copyright belongs to Japanese Interpreter. Unauthorized reproduction prohibited."
     },
     "contactForm": {
         "badge": "Inquiry",
-        "title": "Are you ready to get our best service? Feel free to contact us.",
+        "title": "You can also just make an inquiry. After reviewing your inquiry, we will generally reply in Japanese within 24 hours. We will not make unreasonable sales calls or provide information that requires you to make a reservation.",
         "office": {
-            "label": "Locations",
-            "value": "New Delhi"
+            "label": "Location",
+            "value": "New Delhi, India"
         },
         "email": {
             "label": "Email Address",
             "value": "info@japanese-interpreter.com"
         },
         "hotline": {
-            "label": "Inquiry",
-            "value1": "+81(0) 90-1917-5629 Reiko (Japan)",
-            "value2": "+81(0) 80-5786-9994 Ayushi (Japan)",
-            "value3": "+91(0) 98100-79222 Verma (India)"
+            "label": "Contact by phone",
+            "value1": "+81(0)90-1917-5629 (Reiko/Japan)",
+            "value2": "+91(0)97114-31430 (Ayushi/India)",
+            "value3": "+91(0)98100-79222 (Varma/India)"
         },
         "fields": {
             "name": "Name",
             "namePlaceholder": "Your Name",
             "email": "Email",
             "emailPlaceholder": "XXXX@example.com",
-            "phone": "Telephone Number",
+            "phone": "Phone number (optional)",
             "phonePlaceholder": "080-XXXX-XXX",
             "message": "Inquiry details",
             "messagePlaceholder": "Please enter your inquiry details here.",
@@ -176,8 +184,8 @@
         }
     },
     "thankyou": {
-        "title": "Thank you for your inquiry",
-        "description": "The information you entered has been sent successfully. A representative will contact you shortly. Please wait a moment.",
+        "title": "Sending completed",
+        "description": "Thank you for your inquiry. We will review your inquiry and respond in Japanese, generally within 24 hours. The information you enter will not be used for any purpose other than responding to your inquiry.",
         "line": "Talk to us",
         "backHome": "Back to Home"
     },

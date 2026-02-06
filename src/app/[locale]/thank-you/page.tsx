@@ -60,11 +60,11 @@ export default function ThankYouPage({ params }: { params: Promise<{ locale: str
                         </a>
                     </div>
 
-                    <p className="text-lg md:text-xl text-gray-500 font-medium leading-relaxed pt-4 max-w-2xl mx-auto">
+                    <p className="text-md md:text-lg text-gray-500 font-medium leading-relaxed pt-4 max-w-2xl mx-auto">
                         {t("description")}
                     </p>
 
-                    <div className="pt-6">
+                    <div className="pt-4">
                         <Link
                             href={`/${locale}`}
                             className="inline-flex items-center gap-2 border-2 border-[#12aa91] text-[#12aa91] px-10 py-4 rounded-xl font-bold hover:bg-[#12aa91] hover:text-white transition-all transform hover:scale-105 shadow-md"

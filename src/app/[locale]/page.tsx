@@ -2,7 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import { Navbar } from "../../components/Navbar";
 import YouTubePlayer from "@/src/components/YouTubePlayer";
-import { BadgeCheck } from "lucide-react";
+import { Asterisk, BadgeCheck } from "lucide-react";
 import Link from "next/link";
 
 import StoryImage from "@/src/assets/self-intro-img1.jpg";
@@ -59,6 +59,7 @@ export default async function Home({
             title: t("experiences.card5.title"),
             desc: t("experiences.card5.desc"),
             image: SareeImage,
+            rank: t("experiences.card5.rank"),
         },
     ];
 
@@ -129,10 +130,12 @@ export default async function Home({
                         <span className="bg-[#f0f9f8] text-[#12aa91] px-4 py-1.5 rounded-lg text-sm font-semibold tracking-wide flex items-center gap-2">
                             {t("selfIntro.badge")}
                         </span>
-
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#1a1a1a] mt-6 mb-6 tracking-tight">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-[#1a1a1a] mt-6 mb-6 tracking-tight">
                             {t("selfIntro.title")}
                         </h2>
+                        <h3 className="text-2xl md:text-3xl font-extrabold text-[#1a1a1a] mt-6 mb-6 tracking-tight">
+                            {t("selfIntro.name")}
+                        </h3>
                         <p className="text-gray-500 max-w-3xl text-sm md:text-md leading-relaxed text-justify md:text-left mb-4">
                             {t("selfIntro.subtitle")}
                         </p>
@@ -173,7 +176,8 @@ export default async function Home({
                             {[1, 2, 3].map((i) => (
                                 <li key={i} className="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                                     <div className="shrink-0 w-10 h-10 bg-[#f0f9f8] rounded-full flex items-center justify-center">
-                                        <BadgeCheck className="text-[#12aa91] h-6 w-6" />
+                                        {/* <Asterisk className="text-[#12aa91] h-6 w-6" /> */}
+                                        <span className="text-[#12aa91] text-2xl font-extrabold">※</span>
                                     </div>
                                     <p className="text-sm md:text-base text-gray-600 font-medium">
                                         {t(`stay.description.${i}`)}
@@ -191,6 +195,9 @@ export default async function Home({
                                 title: t("stay.standardRoom"),
                                 description: t("stay.standardRoomDesc"),
                                 price: t("stay.standardRoomInfo"),
+                                info: t("stay.standardRoomInfo2"),
+                                info2: t("stay.standardRoomInfo3"),
+                                info3: t("stay.deluxeRoomInfo4"),
                                 meal: t("stay.meals"),
                                 alt: "Standard Room",
                             },
@@ -199,6 +206,9 @@ export default async function Home({
                                 title: t("stay.deluxeRoom"),
                                 description: t("stay.deluxeRoomDesc"),
                                 price: t("stay.deluxeRoomInfo"),
+                                info: t("stay.deluxeRoomInfo2"),
+                                info2: t("stay.deluxeRoomInfo3"),
+                                info3: t("stay.deluxeRoomInfo4"),
                                 meal: t("stay.meals"),
                                 alt: "Deluxe Room",
                             },
@@ -232,13 +242,16 @@ export default async function Home({
 
             {/* Tourism section */}
             <section id="tours" className="w-full bg-[#f9fafb] py-12 md:py-24 px-4 md:px-12 relative overflow-hidden">
-                <div className="max-w-7xl mx-auto text-center mb-16">
+                <div className="flex flex-col max-w-7xl mx-auto text-center items-center mb-16">
                     <span className="bg-[#e6f6f4] text-[#12aa91] px-4 py-2 rounded-lg text-sm font-bold mb-8 inline-block">
                         {t("tourism.badge")}
                     </span>
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a1a1a] max-w-5xl mx-auto leading-tight tracking-tight mt-6">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a1a1a] max-w-5xl mx-auto leading-tight tracking-tight mt-6 mb-8">
                         {t("tourism.title")}
                     </h2>
+                    <p className="text-gray-500 max-w-3xl text-sm md:text-md leading-relaxed text-justify md:text-center">
+                        {t("tourism.description")}
+                    </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">

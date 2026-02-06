@@ -23,7 +23,7 @@ export function Footer() {
 
                 {/* Page links section */}
                 <div className="flex flex-col gap-6">
-                    <h4 className="text-lg font-bold tracking-tight text-white">{t("page.title")}</h4>
+                    <h2 className="text-lg font-bold tracking-tight text-white">{t("page.title")}</h2>
                     <nav className="flex flex-col gap-3">
                         <Link href="https://www.japanese-interpreter.com/" target="_blank" className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.website")}</Link>
                         <Link href="#about" className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.profile")}</Link>
@@ -35,7 +35,7 @@ export function Footer() {
 
                 {/* Contact section */}
                 <div className="flex flex-col gap-6">
-                    <h4 className="text-lg font-bold tracking-tight text-white">{t("contact.title")}</h4>
+                    <h3 className="text-lg font-bold tracking-tight text-white">{t("contact.title")}</h3>
                     <div className="flex flex-col gap-6">
                         <a href="tel:+919810079222" className="flex items-center gap-4 group">
                             <div className="w-10 h-10 rounded-full bg-[#292e2b] flex items-center justify-center text-[#12aa91] group-hover:bg-[#12aa91] group-hover:text-white transition-all">
@@ -81,8 +81,6 @@ export function Footer() {
                         className="text-gray-400 text-sm leading-relaxed max-w-xs hover:underline transition-colors cursor-pointer"
                     >
                         {t("address.title")}
-                        <br />
-                        {t("address.address")}
                     </a>
                 </div>
             </div>

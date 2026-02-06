@@ -52,6 +52,9 @@ export default function TestimonialsCarousel() {
                 <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-[#1a1a1a] leading-tight tracking-tight mb-10">
                     {t("title")}
                 </h2>
+                <p className="text-gray-500 max-w-3xl text-md md:text-md leading-relaxed text-justify md:text-left">
+                    {t("description")}
+                </p>
             </div>
 
             {/* Right Slideshow Area */}
@@ -97,7 +100,7 @@ export default function TestimonialsCarousel() {
                                         {/* Stars */}
                                         <div className="flex gap-1 mb-6">
                                             {[1, 2, 3, 4, 5].map((s) => (
-                                                <Star key={s} size={20} className="fill-[#12aa91] text-[#12aa91]" />
+                                                <Star key={s} size={20} className="fill-[#FCD601] text-[#FCD601]" />
                                             ))}
                                         </div>
 

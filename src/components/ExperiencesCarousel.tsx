@@ -89,7 +89,7 @@ export default function ExperiencesCarousel({ items, autoplayInterval = 5000 }: 
                     style={{ transform: `translateX(-${currentIndex * (100 / visibleItems)}%)` }}
                 >
                     {items.map((item, index) => (
-                        <div key={index} className="w-full md:w-1/2 lg:w-1/3 shrink-0 px-4">
+                        <div key={index} className="w-full md:w-1/2 lg:w-1/3 shrink-0 px-2 py-4">
                             <div
                                 className="group cursor-pointer"
                                 onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
@@ -104,12 +104,12 @@ export default function ExperiencesCarousel({ items, autoplayInterval = 5000 }: 
 
                                     {item.rank && (
                                         <div className="absolute top-6 left-6 bg-yellow-400 text-black px-4 py-1.5 rounded-lg text-sm font-bold shadow-lg z-10 flex items-center gap-2">
-                                            <span>🏆</span> {item.rank}
+                                            {item.rank}
                                         </div>
                                     )}
 
                                     {/* Expanding Label */}
-                                    <div className={`absolute bottom-6 left-6 right-6 bg-white rounded-lg p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 overflow-hidden ${expandedIndex === index ? 'max-h-[220px]' : 'max-h-[85px] group-hover:max-h-[220px]'}`}>
+                                    <div className={`absolute bottom-6 left-6 right-6 bg-white rounded-lg p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 overflow-hidden ${expandedIndex === index ? 'max-h-[250px]' : 'max-h-[90px] group-hover:max-h-[250px]'}`}>
                                         <div className="flex items-center justify-between mb-4">
                                             <div className="flex flex-col">
                                                 <div className="w-12 h-1 bg-[#12aa91] mb-2 rounded-full"></div>
@@ -124,7 +124,7 @@ export default function ExperiencesCarousel({ items, autoplayInterval = 5000 }: 
                                             </Link>
                                         </div>
                                         <div className={`transition-opacity duration-300 delay-100 ${expandedIndex === index ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
-                                            <p className="text-sm text-gray-500 leading-relaxed font-sans italic">
+                                            <p className="text-sm text-gray-500 leading-relaxed font-sans">
                                                 {item.desc}
                                             </p>
                                         </div>

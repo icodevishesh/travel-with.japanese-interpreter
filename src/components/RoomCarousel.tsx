@@ -10,6 +10,9 @@ interface RoomItem {
     title: string;
     description: string;
     price: string;
+    info: string;
+    info2: string;
+    info3: string;
     meal: string;
     alt: string;
 }
@@ -103,7 +106,7 @@ const RoomCarousel = ({ rooms, autoplayInterval = 5000 }: RoomCarouselProps) => 
                                     />
 
                                     {/* Expanding Label */}
-                                    <div className={`absolute bottom-6 left-6 right-6 bg-white rounded-lg p-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 overflow-hidden ${expandedIndex === index ? 'max-h-[150px]' : 'max-h-[85px] group-hover:max-h-[150px]'}`}>
+                                    <div className={`absolute bottom-6 left-6 right-6 bg-white rounded-lg p-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 overflow-hidden ${expandedIndex === index ? 'max-h-[250px]' : 'max-h-[85px] group-hover:max-h-[250px]'}`}>
                                         <div className="flex items-center justify-between mb-3">
                                             <div className="flex flex-col">
                                                 <div className="w-12 h-1 bg-[#12aa91] mb-2 rounded-full"></div>
@@ -125,7 +128,13 @@ const RoomCarousel = ({ rooms, autoplayInterval = 5000 }: RoomCarouselProps) => 
                                                 - {room.price}
                                             </p>
                                             <p className="text-sm text-gray-500 leading-relaxed font-sans italic">
-                                                - {room.meal}
+                                                - {room.info}
+                                            </p>
+                                            <p className="text-sm text-gray-500 leading-relaxed font-sans italic">
+                                                - {room.info2}
+                                            </p>
+                                            <p className="text-sm text-gray-500 leading-relaxed font-sans italic">
+                                                - {room.info3}
                                             </p>
                                         </div>
                                     </div>

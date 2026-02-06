@@ -89,7 +89,7 @@ const ContactForm = () => {
                 <span className="bg-[#e6f6f4] text-[#12aa91] px-4 py-1.5 rounded-lg text-sm font-bold mb-6">
                     {t("badge")}
                 </span>
-                <h2 className="text-2xl md:text-5xl font-bold text-[#1a1a1a] max-w-4xl leading-tight tracking-tight">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#1a1a1a] max-w-4xl leading-tight tracking-tight">
                     {t("title")}
                 </h2>
             </div>
