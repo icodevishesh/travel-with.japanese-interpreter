@@ -5,7 +5,7 @@ import { Mail, MapPin, Phone, Instagram } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
-import InstagramQr from "@/src/assets/insta-qr.jpeg";
+import InstagramQr from "@/src/assets/insta-qr.png";
 import LineQr from "@/src/assets/line-qr.jpeg";
 
 import { useRouter } from "@/src/i18n/routing";
