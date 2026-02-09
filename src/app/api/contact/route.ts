@@ -140,6 +140,48 @@ export async function POST(req: Request) {
       `
         });
 
+        // Google Sheet logging
+        const sheetUrl = process.env.GOOGLE_SHEET_WEBAPP_URL?.trim();
+        console.log("Attempting Google Sheet logging to:", sheetUrl ? `${sheetUrl.substring(0, 30)}...` : "UNDEFINED");
+
+        if (sheetUrl) {
+            try {
+                const sheetRes = await fetch(sheetUrl, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        name,
+                        email,
+                        phone,
+                        message
+                    }),
+                    redirect: "follow",
+                    cache: "no-store"
+                });
+
+                const sheetText = await sheetRes.text();
+                let sheetJson = null;
+                try {
+                    sheetJson = JSON.parse(sheetText);
+                } catch (e) {
+                    console.error("Failed to parse Google Sheet response as JSON:", sheetText);
+                }
+
+                if (!sheetRes.ok || (sheetJson && !sheetJson.ok)) {
+                    console.error("Google Sheet append failed:", {
+                        status: sheetRes.status,
+                        statusText: sheetRes.statusText,
+                        data: sheetJson || sheetText
+                    });
+                } else {
+                    console.log("Google Sheet updated successfully");
+                }
+            } catch (fetchErr) {
+                console.error("Google Sheet fetch error:", fetchErr);
+            }
+        }
+
+
         return NextResponse.json({ success: true });
     } catch (err) {
         console.error("Mail error:", err);

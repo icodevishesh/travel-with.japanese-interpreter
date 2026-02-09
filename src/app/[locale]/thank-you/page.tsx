@@ -44,7 +44,7 @@ export default function ThankYouPage({ params }: { params: Promise<{ locale: str
                         <CircleCheck size={40} className="text-[#12aa91]" />
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl font-bold font-playfair text-[#1a1a1a] tracking-wide">
+                    <h1 className="text-5xl md:text-6xl font-bold font-playfair text-[#1a1a1a] tracking-wide">
                         {t("title")}
                     </h1>
 

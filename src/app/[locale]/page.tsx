@@ -94,6 +94,14 @@ export default async function Home({
 
             {/* Self Introduction section */}
             <section id="about" className="w-full relative overflow-hidden bg-white py-12 md:py-20 px-4 md:px-12">
+                <div className="flex flex-col items-center text-center mb-12">
+                    <span className="bg-[#f0f9f8] text-[#12aa91] px-4 py-1.5 rounded-lg text-sm font-semibold tracking-wide flex items-center gap-2">
+                        {t("selfIntro.badge")}
+                    </span>
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-[#1a1a1a] my-6 tracking-tight">
+                        {t("selfIntro.title")}
+                    </h2>
+                </div>
                 <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
                     {/* Left: Images */}
                     <div className="relative order-2 lg:order-1 mt-10 lg:mt-0">
@@ -130,20 +138,14 @@ export default async function Home({
 
                     {/* Right: Content */}
                     <div className="flex flex-col items-center lg:items-start order-1 lg:order-2">
-                        <span className="bg-[#f0f9f8] text-[#12aa91] px-4 py-1.5 rounded-lg text-sm font-semibold tracking-wide flex items-center gap-2">
-                            {t("selfIntro.badge")}
-                        </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-[#1a1a1a] mt-6 mb-6 tracking-tight">
-                            {t("selfIntro.title")}
-                        </h2>
-                        <h3 className="text-2xl md:text-3xl font-extrabold text-[#1a1a1a] mt-6 mb-6 tracking-tight">
+                        <h3 className="text-xl md:text-2xl font-bold text-[#1a1a1a] mb-2 tracking-tight">
                             {t("selfIntro.name")}
                         </h3>
                         <p className="text-gray-500 max-w-3xl text-sm md:text-md leading-relaxed text-justify md:text-left mb-4">
                             {t("selfIntro.subtitle")}
                         </p>
 
-                        <span className="text-md text-black font-extrabold tracking-wide mb-6 flex items-center uppercase">
+                        <span className="text-sm md:text-md text-black font-extrabold tracking-wide mb-6 flex items-center uppercase">
                             *{t("selfIntro.experience")}
                         </span>
 
@@ -179,10 +181,9 @@ export default async function Home({
                             {[1, 2, 3].map((i) => (
                                 <li key={i} className="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                                     <div className="shrink-0 w-10 h-10 bg-[#f0f9f8] rounded-full flex items-center justify-center">
-                                        {/* <Asterisk className="text-[#12aa91] h-6 w-6" /> */}
                                         <span className="text-[#12aa91] text-2xl font-extrabold">※</span>
                                     </div>
-                                    <p className="text-sm md:text-base text-gray-600 font-medium">
+                                    <p className="text-sm md:text-base text-gray-600 font-medium text-start">
                                         {t(`stay.description.${i}`)}
                                     </p>
                                 </li>
@@ -246,10 +247,10 @@ export default async function Home({
             {/* Tourism section */}
             <section id="tours" className="w-full bg-[#f9fafb] py-12 md:py-24 px-4 md:px-12 relative overflow-hidden">
                 <div className="flex flex-col max-w-7xl mx-auto text-center items-center mb-16">
-                    <span className="bg-[#e6f6f4] text-[#12aa91] px-4 py-2 rounded-lg text-sm font-bold mb-8 inline-block">
+                    <span className="bg-[#e6f6f4] text-[#12aa91] px-4 py-2 rounded-lg text-sm font-bold mb-6 inline-block">
                         {t("tourism.badge")}
                     </span>
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a1a1a] max-w-5xl mx-auto leading-tight tracking-tight mt-6 mb-8">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a1a1a] max-w-5xl mx-auto leading-tight tracking-tight mb-6">
                         {t("tourism.title")}
                     </h2>
                     <p className="text-gray-500 max-w-3xl text-sm md:text-md leading-relaxed text-justify md:text-center">
@@ -280,6 +281,17 @@ export default async function Home({
                             </div>
                         </div>
                     ))}
+                </div>
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-4 mt-12">
+                    <p className="text-gray-500 max-w-3xl text-sm md:text-lg text-justify md:text-center">
+                        {t("tourism.info")}
+                    </p>
+                    <Link
+                        href="#contact-form"
+                        className="px-4 py-2 bg-[#12aa91] text-white rounded-lg font-semibold hover:bg-[#109882] transition-colors shadow-lg"
+                    >
+                        {t("tourism.button")}
+                    </Link>
                 </div>
             </section>
 
