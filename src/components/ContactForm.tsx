@@ -67,7 +67,7 @@ const ContactForm = () => {
 
                 if (res.ok) {
                     setFormData({ name: "", email: "", phone: "", message: "" });
-                    router.push("thank-you");
+                    router.push("/thank-you");
                 } else {
                     const data = await res.json();
                     alert(data.error || "Failed to send message");
