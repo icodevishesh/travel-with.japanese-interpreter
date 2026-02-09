@@ -124,7 +124,8 @@
             "links": {
                 "website": "Website",
                 "profile": "Company Profile",
-                "homestay": "Homestay and Cultural Experiences",
+                "homestay": "Homestay",
+                "culturalExperiences": "Cultural Experiences",
                 "tours": "Tours and Travel",
                 "testimonials": "Customer Testimonials"
             }
