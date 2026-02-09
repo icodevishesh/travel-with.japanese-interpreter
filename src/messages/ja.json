@@ -126,7 +126,8 @@
             "links": {
                 "website": "ウェブサイト",
                 "profile": "会社概要",
-                "homestay": "ホームステイと文化体験",
+                "homestay": "ホームステイ",
+                "culturalExperiences": "文化体験",
                 "tours": "ツアーと旅行",
                 "testimonials": "お客様の声"
             }

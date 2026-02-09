@@ -28,6 +28,7 @@ export function Footer() {
                         <Link href="https://www.japanese-interpreter.com/" target="_blank" className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.website")}</Link>
                         <Link href="#about" className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.profile")}</Link>
                         <Link href="#homestay" className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.homestay")}</Link>
+                        <Link href="#culturalExperiences" className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.culturalExperiences")}</Link>
                         <Link href="#tours" className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.tours")}</Link>
                         <Link href="#testimonials" className="text-gray-400 hover:text-[#12aa91] transition-colors text-sm">{t("page.links.testimonials")}</Link>
                     </nav>
