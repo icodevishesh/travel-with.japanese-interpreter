@@ -14,7 +14,7 @@ export default function YouTubePlayer({
     const base = "relative aspect-[16/9] overflow-hidden bg-black";
     const containerClass = className ? `${base} ${className}` : base;
 
-    const src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&fs=0`;
+    const src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&loop=1&playlist=${videoId}&controls=0&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&fs=0`;
 
     return (
         <div className={containerClass}>

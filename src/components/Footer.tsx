@@ -76,10 +76,8 @@ export function Footer() {
                     <h4 className="text-lg font-bold tracking-tight text-white">
                         {t("address.value")}</h4>
                     <a
-                        href="https://maps.app.goo.gl/iFwMNLJQJaWp6xXF7"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 text-sm leading-relaxed max-w-xs hover:underline transition-colors cursor-pointer"
+                        href="#contact"
+                        className="text-gray-400 text-sm leading-relaxed max-w-52 hover:underline transition-colors cursor-pointer"
                     >
                         {t("address.title")}
                     </a>

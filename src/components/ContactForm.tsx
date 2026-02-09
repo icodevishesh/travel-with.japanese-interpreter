@@ -4,7 +4,6 @@ import { useTranslations } from "next-intl";
 import { Mail, MapPin, Phone, Instagram } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
-// import {LineWave} from "react-loader-spinner";
 
 import InstagramQr from "@/src/assets/insta-qr.jpeg";
 import LineQr from "@/src/assets/line-qr.jpeg";
@@ -68,7 +67,7 @@ const ContactForm = () => {
 
                 if (res.ok) {
                     setFormData({ name: "", email: "", phone: "", message: "" });
-                    router.push("thank-you");
+                    router.push("/thank-you");
                 } else {
                     const data = await res.json();
                     alert(data.error || "Failed to send message");
@@ -89,9 +88,12 @@ const ContactForm = () => {
                 <span className="bg-[#e6f6f4] text-[#12aa91] px-4 py-1.5 rounded-lg text-sm font-bold mb-6">
                     {t("badge")}
                 </span>
-                <h2 className="text-2xl md:text-3xl font-bold text-[#1a1a1a] max-w-4xl leading-tight tracking-tight">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#1a1a1a] max-w-4xl leading-tight tracking-tight mb-6">
                     {t("title")}
                 </h2>
+                <p className="text-gray-500 max-w-3xl text-sm md:text-md leading-relaxed text-justify md:text-center">
+                    {t("subtitle")}
+                </p>
             </div>
 
             {/* Contact Info Row */}
@@ -132,7 +134,7 @@ const ContactForm = () => {
                     <h2 className="text-xl md:text-2xl font-playfair font-medium text-gray-900 mb-4 italic">{t("fields.qr")}</h2>
                     <div className="flex md:flex-col flex-row justify-center items-center text-center gap-6">
                         <div className="flex flex-col items-center gap-2">
-                            <span className="hidden md:flex items-center gap-2 text-gray-500 font-medium text-xs md:text-sm"><Instagram size={18} /> {t("fields.instagram")}</span>
+                            <span className="hidden md:flex items-center gap-2 text-gray-500 font-medium text-xs md:text-sm">{t("fields.follow")}</span>
                             <Image src={InstagramQr} alt="Instagram QR" className="md:w-64 md:h-64 w-28 h-28" />
                         </div>
                         <Image src={LineQr} alt="Line QR" className="md:w-64 md:h-64 w-28 h-28" />

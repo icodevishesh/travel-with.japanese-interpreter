@@ -21,7 +21,6 @@ export default function ExperiencesCarousel({ items, autoplayInterval = 5000 }: 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
     const [visibleItems, setVisibleItems] = useState(3);
-    const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
     useEffect(() => {
         const updateVisibleItems = () => {
@@ -84,17 +83,16 @@ export default function ExperiencesCarousel({ items, autoplayInterval = 5000 }: 
             </div>
 
             <div className="overflow-hidden">
+
+                {/* Experience cards */}
                 <div
                     className="flex transition-transform duration-500 ease-out"
                     style={{ transform: `translateX(-${currentIndex * (100 / visibleItems)}%)` }}
                 >
                     {items.map((item, index) => (
-                        <div key={index} className="w-full md:w-1/2 lg:w-1/3 shrink-0 px-2 py-4">
-                            <div
-                                className="group cursor-pointer"
-                                onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
-                            >
-                                <div className={`relative aspect-9/16 md:aspect-4/3 rounded-xl overflow-hidden shadow-2xl transition-transform duration-500 ${expandedIndex === index ? '-translate-y-2' : 'group-hover:-translate-y-2'}`}>
+                        <div key={index} className="w-full md:w-1/2 lg:w-1/3 shrink-0 px-2 py-4 flex flex-col">
+                            <div className="group flex flex-col h-full">
+                                <div className="relative aspect-9/16 md:aspect-4/3 rounded-t-xl overflow-hidden shadow-2xl transition-transform duration-500 group-hover:-translate-y-2 shrink-0">
                                     <Image
                                         src={item.image}
                                         alt={item.title}
@@ -103,31 +101,31 @@ export default function ExperiencesCarousel({ items, autoplayInterval = 5000 }: 
                                     />
 
                                     {item.rank && (
-                                        <div className="absolute top-6 left-6 bg-yellow-400 text-black px-4 py-1.5 rounded-lg text-sm font-bold shadow-lg z-10 flex items-center gap-2">
+                                        <div className="absolute border border-gray-200 top-2 left-2 bg-yellow-400 text-black px-2 py-1.5 rounded-lg text-sm font-semibold shadow-lg z-10 flex items-center gap-2">
                                             {item.rank}
                                         </div>
                                     )}
+                                </div>
 
-                                    {/* Expanding Label */}
-                                    <div className={`absolute bottom-6 left-6 right-6 bg-white rounded-lg p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 overflow-hidden ${expandedIndex === index ? 'max-h-[250px]' : 'max-h-[90px] group-hover:max-h-[250px]'}`}>
-                                        <div className="flex items-center justify-between mb-4">
-                                            <div className="flex flex-col">
-                                                <div className="w-12 h-1 bg-[#12aa91] mb-2 rounded-full"></div>
-                                                <h4 className="text-base md:text-lg font-bold text-[#1a1a1a] leading-tight">
-                                                    {item.title}
-                                                </h4>
+                                {/* Experience description */}
+                                <div className="bg-white rounded-b-xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-50 flex flex-col grow">
+                                    <div className="flex items-center justify-between mb-4">
+                                        <div className="flex flex-col">
+                                            <div className="w-12 h-1 bg-[#12aa91] mb-2 rounded-full"></div>
+                                            <h4 className="text-base md:text-lg font-bold text-[#1a1a1a] leading-tight line-clamp-2">
+                                                {item.title}
+                                            </h4>
+                                        </div>
+                                        <Link href="#contact-form" className="shrink-0 ml-2">
+                                            <div className="w-10 h-10 rounded-full bg-[#12aa91] flex items-center justify-center text-white transition-transform group-hover:rotate-45">
+                                                <ArrowUpRight size={20} />
                                             </div>
-                                            <Link href="#contact-form">
-                                                <div className={`w-10 h-10 rounded-full bg-[#12aa91] flex items-center justify-center text-white transition-transform shrink-0 ${expandedIndex === index ? 'rotate-45' : 'group-hover:rotate-45'}`}>
-                                                    <ArrowUpRight size={20} />
-                                                </div>
-                                            </Link>
-                                        </div>
-                                        <div className={`transition-opacity duration-300 delay-100 ${expandedIndex === index ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
-                                            <p className="text-sm text-gray-500 leading-relaxed font-sans">
-                                                {item.desc}
-                                            </p>
-                                        </div>
+                                        </Link>
+                                    </div>
+                                    <div className="grow">
+                                        <p className="text-sm text-gray-500 leading-relaxed font-sans">
+                                            {item.desc}
+                                        </p>
                                     </div>
                                 </div>
                             </div>

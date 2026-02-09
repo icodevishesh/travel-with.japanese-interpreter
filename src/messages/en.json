@@ -26,7 +26,7 @@
     "selfIntro": {
         "badge": "Self-Introduction",
         "title": "Local supporter for Japanese travelers in India",
-        "name": "Varma BK",
+        "name": "BK Varma",
         "subtitle": "We provide travel and accommodation support in India for Japanese travelers, with services available in Japanese. I will be responsible for itinerary planning, local transportation, and communication during cultural experiences.",
         "experience": "Experience and qualifications",
         "item1": "Certified tour guide by the Ministry of Tourism, Government of India",
@@ -92,13 +92,14 @@
         "north": "North India tourism here!",
         "south": "South India tourism here!",
         "east": "East India Tourism here!",
-        "west": "Western India tourism here!"
+        "west": "Western India tourism here!",
+        "info": "For inquiries about travel details, please contact us here.",
+        "button": "Click here!"
     },
     "testimonials": {
         "badge": "Customer Testimonials",
         "title": "Customer Testimonials",
         "description": "These are comments from Japanese customers who have used our service. Many of these comments are from people visiting India for the first time.",
-        "button": "Click to see!",
         "items": [
             {
                 "name": "Reiko",
@@ -150,7 +151,8 @@
     },
     "contactForm": {
         "badge": "Inquiry",
-        "title": "You can also just make an inquiry. After reviewing your inquiry, we will generally reply in Japanese within 24 hours. We will not make unreasonable sales calls or provide information that requires you to make a reservation.",
+        "title": "Contact Us",
+        "subtitle": "You can also just make an inquiry. After reviewing your inquiry, we will generally reply in Japanese within 24 hours. We will not make unreasonable sales calls or provide information that requires you to make a reservation.",
         "office": {
             "label": "Location",
             "value": "New Delhi, India"
@@ -177,8 +179,7 @@
             "send": "Send",
             "loading": "Sending...",
             "qr": "Please feel free to contact us.",
-            "instagram": "Follow on Instagram",
-            "line": "Follow on Line"
+            "follow": "You can also contact us via LINE or Instagram."
         },
         "errors": {
             "name": "Name is required",
@@ -189,7 +190,7 @@
         }
     },
     "thankyou": {
-        "title": "Sending completed",
+        "title": "Your message has been sent",
         "description": "Thank you for your inquiry. We will review your inquiry and respond in Japanese, generally within 24 hours. The information you enter will not be used for any purpose other than responding to your inquiry.",
         "line": "Talk to us",
         "backHome": "Back to Home"
