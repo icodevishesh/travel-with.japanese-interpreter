@@ -2,22 +2,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import { Navbar } from "../../components/Navbar";
 import YouTubePlayer from "@/src/components/YouTubePlayer";
-import { Asterisk, BadgeCheck } from "lucide-react";
+import { BadgeCheck } from "lucide-react";
 import Link from "next/link";
-
-import StoryImage from "@/src/assets/self-intro-img1.jpg";
-import TourImage from "@/src/assets/self-intro-img2.jpg";
-import DeluxeRoomImage from "@/src/assets/deeluxrrom1.jpeg";
-import StandardRoomImage from "@/src/assets/standardroom.jpg";
-import AyurvedicMassageImage from "@/src/assets/massage.jpg";
-import IndianCookingImage from "@/src/assets/cooking.png";
-import HennaArtImage from "@/src/assets/mehendi.png";
-import YogaImage from "@/src/assets/yoga.jpg";
-import NorthIndiaImage from "@/src/assets/north-india.jpg";
-import SouthIndiaImage from "@/src/assets/south-india.png";
-import EastIndiaImage from "@/src/assets/east-india.jpg";
-import WestIndiaImage from "@/src/assets/west-india.jpg";
-import SareeImage from "@/src/assets/saaree.png";
 
 import ExperiencesCarousel from "@/src/components/ExperiencesCarousel";
 import TestimonialsCarousel from "@/src/components/TestimonialsCarousel";
@@ -37,29 +23,34 @@ export default async function Home({
         {
             title: t("experiences.card1.title"),
             desc: t("experiences.card1.desc"),
-            image: AyurvedicMassageImage,
+            image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/1-1-600x400-1-571x400-1.jpg",
         },
         {
             title: t("experiences.card2.title"),
             desc: t("experiences.card2.desc"),
-            image: IndianCookingImage,
+            image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/1.png",
             rank: t("experiences.card2.rank"),
         },
         {
             title: t("experiences.card3.title"),
             desc: t("experiences.card3.desc"),
-            image: HennaArtImage,
+            image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/3.png",
         },
         {
             title: t("experiences.card4.title"),
             desc: t("experiences.card4.desc"),
-            image: YogaImage,
+            image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/Universal-Yoga-Experience-with-SAM-Yoga-900x630-1.jpg",
         },
         {
             title: t("experiences.card5.title"),
             desc: t("experiences.card5.desc"),
-            image: SareeImage,
+            image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/5.png",
             rank: t("experiences.card5.rank"),
+        },
+        {
+            title: t("experiences.card6.title"),
+            desc: t("experiences.card6.desc"),
+            image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/4.png",
         },
     ];
 
@@ -113,7 +104,7 @@ export default async function Home({
                         {/* Main Image */}
                         <div className="rounded-3xl overflow-hidden shadow-2xl relative z-10">
                             <Image
-                                src={StoryImage}
+                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/story3-scaled-1-500x500-1.jpg"
                                 alt="Trade show"
                                 width={800}
                                 height={600}
@@ -126,7 +117,7 @@ export default async function Home({
                         {/* Overlapping Image */}
                         <div className="absolute -bottom-10 left-0 md:-left-10 w-1/2 md:w-1/2 rounded-3xl overflow-hidden shadow-2xl z-20 border-4 border-white transition-transform hover:scale-105 duration-300">
                             <Image
-                                src={TourImage}
+                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/ourstory1-500x500-1.jpg"
                                 alt="Tour group"
                                 width={400}
                                 height={300}
@@ -195,7 +186,7 @@ export default async function Home({
                     <RoomCarousel
                         rooms={[
                             {
-                                image: StandardRoomImage,
+                                image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7728-scaled-1.jpg",
                                 title: t("stay.standardRoom"),
                                 description: t("stay.standardRoomDesc"),
                                 price: t("stay.standardRoomInfo"),
@@ -206,7 +197,7 @@ export default async function Home({
                                 alt: "Standard Room",
                             },
                             {
-                                image: DeluxeRoomImage,
+                                image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/deeluxrrom1-scaled-1.jpeg",
                                 title: t("stay.deluxeRoom"),
                                 description: t("stay.deluxeRoomDesc"),
                                 price: t("stay.deluxeRoomInfo"),
@@ -260,10 +251,10 @@ export default async function Home({
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
                     {[
-                        { title: t("tourism.north"), img: NorthIndiaImage },
-                        { title: t("tourism.south"), img: SouthIndiaImage },
-                        { title: t("tourism.east"), img: EastIndiaImage },
-                        { title: t("tourism.west"), img: WestIndiaImage },
+                        { title: t("tourism.north"), img: "https://www.japanese-interpreter.com/wp-content/uploads/2025/02/steptodown.com409460-1.jpg" },
+                        { title: t("tourism.south"), img: "https://www.japanese-interpreter.com/wp-content/uploads/2025/02/Best-Places-to-Visit-in-South-India-This-December.png" },
+                        { title: t("tourism.east"), img: "https://www.japanese-interpreter.com/wp-content/uploads/2025/02/02-04-2024-08-12North-East-of-India.jpg" },
+                        { title: t("tourism.west"), img: "https://www.japanese-interpreter.com/wp-content/uploads/2025/02/Blog-2-10.jpg" },
                     ].map((region, idx) => (
                         <div key={idx} className="group relative aspect-3/2 rounded-xl overflow-hidden shadow-xl">
                             <Image
@@ -272,6 +263,7 @@ export default async function Home({
                                 fill
                                 className="object-cover"
                                 sizes="(max-width: 768px) 100vw, 50vw"
+                                unoptimized
                             />
                             {/* Overlay with title matching design */}
                             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex items-end justify-start p-6">

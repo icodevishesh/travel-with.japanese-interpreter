@@ -1,12 +1,12 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 interface RoomItem {
-    image: StaticImageData;
+    image: string;
     title: string;
     description: string;
     price: string;
@@ -103,6 +103,7 @@ const RoomCarousel = ({ rooms, autoplayInterval = 5000 }: RoomCarouselProps) => 
                                         alt={room.alt}
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                        unoptimized
                                     />
 
                                     {/* Expanding Label */}
