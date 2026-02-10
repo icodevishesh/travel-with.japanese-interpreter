@@ -56,22 +56,15 @@ export function Navbar({ locale }: { locale: string }) {
                 </Link>
 
                 {/* Desktop Navigation */}
-                <div className="hidden lg:flex items-center gap-6 xl:gap-8 text-[#4a4a4a] text-sm font-medium">
-                    <Link href={`/${locale}`} className="text-[#12aa91] hover:text-[#0e8a75] transition-colors">
+                <div className="hidden md:flex items-center gap-4 text-[#4a4a4a] text-sm font-medium">
+                    {/* <Link href={`/${locale}`} className="text-[#12aa91] hover:text-[#0e8a75] transition-colors">
                         {t("home")}
-                    </Link>
+                    </Link> */}
                     <Link href={`/${locale}#about`} className="hover:text-[#12aa91] transition-colors whitespace-nowrap">
                         {t("selfIntroduction")}
                     </Link>
-                    <div className="flex items-center gap-1 cursor-pointer hover:text-[#12aa91] transition-colors group relative py-2">
-                        <span className="whitespace-nowrap">{t("homestayAndCultural")}</span>
-                        <ChevronDown size={14} />
-                        {/* Dropdown Placeholder */}
-                        <div className="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg rounded-md mt-0 py-2 w-56 z-50 border border-gray-100">
-                            <Link href={`/${locale}#homestay`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("homestay")}</Link>
-                            <Link href={`/${locale}#experiences`} className="block px-4 py-2 hover:bg-[#f0f9f8] hover:text-[#12aa91]">{t("culturalExperiences")}</Link>
-                        </div>
-                    </div>
+                    <Link href={`/${locale}#homestay`} className="block px-4 py-2 hover:text-[#12aa91]">{t("homestay")}</Link>
+                    <Link href={`/${locale}#experiences`} className="block px-4 py-2 hover:text-[#12aa91]">{t("culturalExperiences")}</Link>
                     <Link href={`/${locale}#tours`} className="hover:text-[#12aa91] transition-colors whitespace-nowrap">
                         {t("optionalTours")}
                     </Link>
@@ -98,14 +91,17 @@ export function Navbar({ locale }: { locale: string }) {
             {/* Mobile Navigation Dropdown */}
             {isMenuOpen && (
                 <div className="lg:hidden bg-white border-t border-gray-100 py-4 px-4 flex flex-col gap-4 shadow-inner">
-                    <Link href={`/${locale}`} className="text-[#12aa91] font-medium" onClick={() => setIsMenuOpen(false)}>
+                    {/* <Link href={`/${locale}`} className="text-[#12aa91] font-medium" onClick={() => setIsMenuOpen(false)}>
                         {t("home")}
-                    </Link>
+                    </Link> */}
                     <Link href={`/${locale}#about`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
                         {t("selfIntroduction")}
                     </Link>
                     <Link href={`/${locale}#homestay`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
-                        {t("homestayAndCultural")}
+                        {t("homestay")}
+                    </Link>
+                    <Link href={`/${locale}#experiences`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
+                        {t("culturalExperiences")}
                     </Link>
                     <Link href={`/${locale}#tours`} className="text-gray-700" onClick={() => setIsMenuOpen(false)}>
                         {t("optionalTours")}
