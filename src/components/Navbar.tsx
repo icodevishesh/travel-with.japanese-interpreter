@@ -42,7 +42,7 @@ export function Navbar({ locale }: { locale: string }) {
             </div>
 
             {/* Main Bar */}
-            <div className="w-full bg-white border-b py-3 px-4 md:px-12 flex justify-between items-center">
+            <div className="w-full bg-white border-b py-2 px-4 md:px-12 flex justify-between items-center">
                 {/* Logo */}
                 <Link href={`/${locale}`} className="flex flex-col items-center">
                     <Image
@@ -50,7 +50,7 @@ export function Navbar({ locale }: { locale: string }) {
                         alt="Logo"
                         width={100}
                         height={40}
-                        className="h-15 w-auto object-contain"
+                        className="h-10 md:h-15 w-auto object-contain"
                         priority
                     />
                 </Link>
