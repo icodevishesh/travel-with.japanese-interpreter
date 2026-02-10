@@ -186,7 +186,7 @@ export default async function Home({
                     <RoomCarousel
                         rooms={[
                             {
-                                image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7728-scaled-1.jpg",
+                                image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7728-scaled-1-2560x1792-1.jpg",
                                 title: t("stay.standardRoom"),
                                 description: t("stay.standardRoomDesc"),
                                 price: t("stay.standardRoomInfo"),
@@ -263,7 +263,6 @@ export default async function Home({
                                 fill
                                 className="object-cover"
                                 sizes="(max-width: 768px) 100vw, 50vw"
-                                unoptimized
                             />
                             {/* Overlay with title matching design */}
                             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex items-end justify-start p-6">

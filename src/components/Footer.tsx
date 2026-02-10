@@ -55,7 +55,7 @@ export function Footer() {
                             <div className="flex flex-col">
                                 <span className="text-[10px] text-gray-500 uppercase tracking-widest font-bold">{t("contact.emailLabel")}</span>
                                 <Link href="mailto:bkvermaindo@gmail.com" target="_blank">
-                                    <span className="text-sm font-semibold text-gray-200">bkvermaindo@gmail.com</span>
+                                    <span className="text-sm font-semibold text-gray-200">info@japanese-interpreter.com</span>
                                 </Link>
                             </div>
                         </div>

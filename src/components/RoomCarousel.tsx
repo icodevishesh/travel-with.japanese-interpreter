@@ -103,7 +103,6 @@ const RoomCarousel = ({ rooms, autoplayInterval = 5000 }: RoomCarouselProps) => 
                                         alt={room.alt}
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-110"
-                                        unoptimized
                                     />
 
                                     {/* Expanding Label */}
