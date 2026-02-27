@@ -11,6 +11,11 @@ const nextConfig: NextConfig = {
                 hostname: "www.japanese-interpreter.com",
                 pathname: "/**",
             },
+            {
+                protocol: "https",
+                hostname: "res.cloudinary.com",
+                pathname: "/**",
+            },
         ],
     },
 };

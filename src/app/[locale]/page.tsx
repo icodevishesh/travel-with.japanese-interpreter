@@ -23,34 +23,34 @@ export default async function Home({
         {
             title: t("experiences.card1.title"),
             desc: t("experiences.card1.desc"),
-            image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/1-1-600x400-1-571x400-1.jpg",
+            image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770790566/massage_j9jfj7.jpg",
         },
         {
             title: t("experiences.card2.title"),
             desc: t("experiences.card2.desc"),
-            image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/1.png",
+            image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802865/cooking_9_11zon_ae6crx.jpg",
             rank: t("experiences.card2.rank"),
         },
         {
             title: t("experiences.card3.title"),
             desc: t("experiences.card3.desc"),
-            image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/3.png",
+            image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802832/mehendi_16_11zon_uyrmif.jpg",
         },
         {
             title: t("experiences.card4.title"),
             desc: t("experiences.card4.desc"),
-            image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/Universal-Yoga-Experience-with-SAM-Yoga-900x630-1.jpg",
+            image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770790652/yoga_iorclm.jpg",
         },
         {
             title: t("experiences.card5.title"),
             desc: t("experiences.card5.desc"),
-            image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/5.png",
+            image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802935/saaree_20_11zon_rliv97.jpg",
             rank: t("experiences.card5.rank"),
         },
         {
             title: t("experiences.card6.title"),
             desc: t("experiences.card6.desc"),
-            image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/4.png",
+            image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770874265/4_wfo0qp.webp",
         },
     ];
 
@@ -104,7 +104,7 @@ export default async function Home({
                         {/* Main Image */}
                         <div className="rounded-3xl overflow-hidden shadow-2xl relative z-10">
                             <Image
-                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/story3-scaled-1-500x500-1.jpg"
+                                src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770804244/self-intro-img1_21_11zon_i5bjgf.jpg"
                                 alt="Trade show"
                                 width={800}
                                 height={600}
@@ -117,7 +117,7 @@ export default async function Home({
                         {/* Overlapping Image */}
                         <div className="absolute -bottom-10 left-0 md:-left-10 w-1/2 md:w-1/2 rounded-3xl overflow-hidden shadow-2xl z-20 border-4 border-white transition-transform hover:scale-105 duration-300">
                             <Image
-                                src="https://www.japanese-interpreter.com/wp-content/uploads/2024/12/ourstory1-500x500-1.jpg"
+                                src="https://res.cloudinary.com/dtdvglgx4/image/upload/v1770804247/self-intro-img2_22_11zon_fan9zq.jpg"
                                 alt="Tour group"
                                 width={400}
                                 height={300}
@@ -186,7 +186,7 @@ export default async function Home({
                     <RoomCarousel
                         rooms={[
                             {
-                                image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/IMG_7728-scaled-1-2560x1792-1.jpg",
+                                image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770802986/standard-room_1_11zon_ouaxat.jpg",
                                 title: t("stay.standardRoom"),
                                 description: t("stay.standardRoomDesc"),
                                 price: t("stay.standardRoomInfo"),
@@ -197,7 +197,7 @@ export default async function Home({
                                 alt: "Standard Room",
                             },
                             {
-                                image: "https://www.japanese-interpreter.com/wp-content/uploads/2024/12/deeluxrrom1-scaled-1.jpeg",
+                                image: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770803023/deeluxrrom1_10_11zon_zwhqdk.jpg",
                                 title: t("stay.deluxeRoom"),
                                 description: t("stay.deluxeRoomDesc"),
                                 price: t("stay.deluxeRoomInfo"),
@@ -251,10 +251,10 @@ export default async function Home({
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
                     {[
-                        { title: t("tourism.north"), img: "https://www.japanese-interpreter.com/wp-content/uploads/2025/02/steptodown.com409460-1.jpg" },
-                        { title: t("tourism.south"), img: "https://www.japanese-interpreter.com/wp-content/uploads/2025/02/Best-Places-to-Visit-in-South-India-This-December.png" },
-                        { title: t("tourism.east"), img: "https://www.japanese-interpreter.com/wp-content/uploads/2025/02/02-04-2024-08-12North-East-of-India.jpg" },
-                        { title: t("tourism.west"), img: "https://www.japanese-interpreter.com/wp-content/uploads/2025/02/Blog-2-10.jpg" },
+                        { title: t("tourism.north"), img: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770804888/north-india_18_11zon_yd25mv.jpg" },
+                        { title: t("tourism.south"), img: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770804888/north-india_18_11zon_yd25mv.jpg" },
+                        { title: t("tourism.east"), img: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770792790/east-india_rlbnqo.jpg" },
+                        { title: t("tourism.west"), img: "https://res.cloudinary.com/dtdvglgx4/image/upload/v1770804895/west-india_25_11zon_f7jk4g.jpg" },
                     ].map((region, idx) => (
                         <div key={idx} className="group relative aspect-3/2 rounded-xl overflow-hidden shadow-xl">
                             <Image
